@@ -7,6 +7,6 @@ MyStack -> based on MyArrayList
 
 Wasn't used standard Java collections ('java.util.*`).
 
-## , Author
+## Author
 * **Auyelkhan Nuraly**
 * **Group:** SE-2534
