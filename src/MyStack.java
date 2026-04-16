@@ -1,6 +1,4 @@
-/**
- * LIFO Logical Data Structure based on MyArrayList.
- */
+// LIFO Logical Data Structure based on MyArrayList.
 public class MyStack<T extends Comparable<T>> {
     private final MyArrayList<T> list;
 

@@ -1,6 +1,4 @@
-/**
- * FIFO Logical Data Structure based on MyLinkedList.
- */
+// FIFO Logical Data Structure based on MyLinkedList.
 public class MyQueue<T extends Comparable<T>> {
     private final MyLinkedList<T> list;
 

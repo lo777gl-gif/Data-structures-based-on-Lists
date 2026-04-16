@@ -1,6 +1,4 @@
-/**
- * Min-Heap Logical Data Structure based on MyArrayList.
- */
+// Minimum Heap Logical Data Structure based on MyArrayList.
 public class MyMinHeap<T extends Comparable<T>> {
     private final MyArrayList<T> list;
 
