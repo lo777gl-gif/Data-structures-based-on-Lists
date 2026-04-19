@@ -154,14 +154,15 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
         size--;
     }
 
-
     @Override
     public void sort() {
         if (size <= 1) return;
-        boolean swapped;
-        do {
+
+        boolean swapped = true;
+        while (swapped) {
             swapped = false;
             MyNode curr = head;
+
             while (curr.next != null) {
                 if (curr.data.compareTo(curr.next.data) > 0) {
                     T temp = curr.data;
@@ -171,7 +172,7 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
                 }
                 curr = curr.next;
             }
-        } while (swapped);
+        }
     }
 
     @Override

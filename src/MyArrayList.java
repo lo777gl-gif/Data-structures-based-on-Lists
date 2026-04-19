@@ -60,7 +60,6 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         add(item);
     }
 
-    @SuppressWarnings("unchecked")
     @Override
     public T get(int index) {
         checkIndex(index);
@@ -96,7 +95,6 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
         remove(size - 1);
     }
 
-    @SuppressWarnings("unchecked")
     @Override
     public void sort() {
         for (int i = 0; i < size - 1; i++) {
@@ -171,4 +169,5 @@ public class MyArrayList<T extends Comparable<T>> implements MyList<T> {
             }
         };
     }
+
 }
