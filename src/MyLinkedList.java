@@ -154,6 +154,7 @@ public class MyLinkedList<T extends Comparable<T>> implements MyList<T> {
         size--;
     }
 
+
     @Override
     public void sort() {
         if (size <= 1) return;

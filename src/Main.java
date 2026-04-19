@@ -16,13 +16,13 @@ public class Main {
         arrList.removeLast(); // 3, 5
         System.out.println("New size: " + arrList.size()); // 2
 
-        System.out.println("Original list: ");
+        System.out.print("Original list: ");
         for (int i = 0; i < arrList.size(); i++)
         {
             System.out.print(arrList.get(i) + " ");
         }
 
-        System.out.println("\n--- Testing MyLinkedList ---");
+        System.out.println("\n\n--- Testing MyLinkedList ---");
         MyLinkedList<String> linkedList = new MyLinkedList<>();
         linkedList.add("Zebra");
         linkedList.addFirst("Apple");
@@ -32,16 +32,17 @@ public class Main {
         System.out.println("First element: " + linkedList.getFirst()); // Apple
         System.out.println("Last element: " + linkedList.getLast()); // Zebra
 
+        System.out.println("Size before clear: " + linkedList.size()); // 3
         linkedList.clear();
         System.out.println("Size after clear: " + linkedList.size()); // 0
 
-        System.out.println("\n\n--- Testing Logical Structures ---");
+        System.out.println("\n--- Testing Logical Structures ---");
 
         // Stack Test
         MyStack<Integer> stack = new MyStack<>();
         stack.push(10);
         stack.push(20);
-        System.out.println("Stack Pop: " + stack.pop()); // 20
+        System.out.println("Stack Peek: " + stack.peek()); // 20
 
         // Queue Test
         MyQueue<Integer> queue = new MyQueue<>();
